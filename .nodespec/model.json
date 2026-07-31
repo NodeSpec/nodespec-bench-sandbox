@@ -1,0 +1,72 @@
+{
+  "modelVersion": 1,
+  "generatedBy": "nodespec",
+  "modelHash": "eee59a9a81e1f2fda16a985e7ea5a602ed7923a6cc067a8004ba999c12c9ed1a",
+  "nodes": [
+    {
+      "id": "9716c931-3067-4e1d-a0fd-086848a8afb1",
+      "type": "backend-service",
+      "label": "API Service",
+      "ports": [
+        {
+          "id": "5a5f522e-59b1-45d1-915d-fff8b0f16cb1",
+          "name": "DB queries",
+          "direction": "out"
+        }
+      ],
+      "contentHash": "88f800a8bf22546ef47972494adb6e43662f64862758136f27c468b41730e114"
+    },
+    {
+      "id": "f42e95f3-ddab-457b-b5c9-5658802e5dfc",
+      "type": "database",
+      "label": "Primary Database",
+      "ports": [
+        {
+          "id": "3a7c7cf8-bdf0-4682-9e3f-14269a6cd5c9",
+          "name": "SQL interface",
+          "direction": "in"
+        }
+      ],
+      "contentHash": "143e7adefe0f415c9435a75ab0ccbb7b7dd7fb8857a22824ce0b6361b7623ad3"
+    }
+  ],
+  "edges": [
+    {
+      "id": "4ad7f2ce-9019-451e-8d7b-e961067c2b0c",
+      "source": "9716c931-3067-4e1d-a0fd-086848a8afb1",
+      "target": "f42e95f3-ddab-457b-b5c9-5658802e5dfc",
+      "contractId": "759dea1f-c65a-4807-a2fe-5cfa623a21fd",
+      "sourcePortId": "5a5f522e-59b1-45d1-915d-fff8b0f16cb1",
+      "targetPortId": "3a7c7cf8-bdf0-4682-9e3f-14269a6cd5c9",
+      "contentHash": "ea4bb3706d9ede9826500a9132085c41dd7768d496ea222f7f0e31b8637bda60"
+    }
+  ],
+  "contracts": [
+    {
+      "id": "759dea1f-c65a-4807-a2fe-5cfa623a21fd",
+      "kind": "sql",
+      "name": "Task storage queries",
+      "contentHash": "d97b760fbd6932973732564b76f46950b7df4be3d281090c2605d583530dfd2e"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "1a8f3164-0476-4dea-a789-22d1d79ee459",
+      "nodeId": "9716c931-3067-4e1d-a0fd-086848a8afb1",
+      "path": "src/features/squash.ts",
+      "kind": "source"
+    },
+    {
+      "id": "2057061f-f6e4-4dd0-9658-98d62f1ef80a",
+      "nodeId": "9716c931-3067-4e1d-a0fd-086848a8afb1",
+      "path": "src/api/index.ts",
+      "kind": "source"
+    },
+    {
+      "id": "f462b25d-6709-473f-aa17-defe929f05b8",
+      "nodeId": "9716c931-3067-4e1d-a0fd-086848a8afb1",
+      "path": ".nodespec/tasks/api-service.task.md",
+      "kind": "task"
+    }
+  ]
+}
