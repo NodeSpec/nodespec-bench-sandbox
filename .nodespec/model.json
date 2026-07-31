@@ -1,0 +1,72 @@
+{
+  "modelVersion": 1,
+  "generatedBy": "nodespec",
+  "modelHash": "8ecfa913729e08be992c56f140fe389dbc64a82a0a06f7c15c4637cfc72b452b",
+  "nodes": [
+    {
+      "id": "983a1979-aa59-40d2-bfb4-dffe37dd7e01",
+      "type": "backend-service",
+      "label": "API Service",
+      "ports": [
+        {
+          "id": "e7e307ca-805b-4f55-b7b3-164d8fe8a170",
+          "name": "DB queries",
+          "direction": "out"
+        }
+      ],
+      "contentHash": "76023e355e2e1ea071b74650e3c0ac9863d6a7c9152add73fb178c67f729ebe1"
+    },
+    {
+      "id": "b57061c8-9cc5-40d4-8c65-b32b929b861b",
+      "type": "database",
+      "label": "Primary Database",
+      "ports": [
+        {
+          "id": "1a995396-c484-443c-a016-9c6e4254239c",
+          "name": "SQL interface",
+          "direction": "in"
+        }
+      ],
+      "contentHash": "77be5a2876019f9ec48d9cffb70fb41bd76360a631b1a3e00044f51093449859"
+    }
+  ],
+  "edges": [
+    {
+      "id": "be38b450-40f5-4dfc-b7ee-49048c5d449d",
+      "source": "983a1979-aa59-40d2-bfb4-dffe37dd7e01",
+      "target": "b57061c8-9cc5-40d4-8c65-b32b929b861b",
+      "contractId": "15cf18cf-e420-4e16-9501-100b62cfbf3c",
+      "sourcePortId": "e7e307ca-805b-4f55-b7b3-164d8fe8a170",
+      "targetPortId": "1a995396-c484-443c-a016-9c6e4254239c",
+      "contentHash": "53d9b26da41219dd832c1551f56c3e8ddce0f3d928778f18b503ec48ec5b5734"
+    }
+  ],
+  "contracts": [
+    {
+      "id": "15cf18cf-e420-4e16-9501-100b62cfbf3c",
+      "kind": "sql",
+      "name": "Task storage queries",
+      "contentHash": "b9f2c1882750a004c0a58c9a08d5757fc8de1e2a42916eabdebe0114cba8ce76"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "43eaae15-81b1-4181-924e-026d38d86bbc",
+      "nodeId": "983a1979-aa59-40d2-bfb4-dffe37dd7e01",
+      "path": ".nodespec/tasks/api-service.task.md",
+      "kind": "task"
+    },
+    {
+      "id": "72da4545-88a3-4f7b-ae36-a1864addd8c5",
+      "nodeId": "983a1979-aa59-40d2-bfb4-dffe37dd7e01",
+      "path": "src/features/squash.ts",
+      "kind": "source"
+    },
+    {
+      "id": "79c6a64c-ae80-4ce9-89d9-32df2c8c7eeb",
+      "nodeId": "983a1979-aa59-40d2-bfb4-dffe37dd7e01",
+      "path": "src/api/index.ts",
+      "kind": "source"
+    }
+  ]
+}
