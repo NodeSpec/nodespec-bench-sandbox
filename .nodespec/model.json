@@ -1,7 +1,7 @@
 {
   "modelVersion": 1,
   "generatedBy": "nodespec",
-  "modelHash": "2099a22680fd7dc7ed9e354ec0a95c89de66fd938099acdccdf51d01da8bbd25",
+  "modelHash": "fc88c2fef99a5585dda070d92ed392983407997d9e221d0722aacd58a6e8948b",
   "nodes": [
     {
       "id": "7bb2a1bc-b3c5-4f1b-8363-a10027e23498",
@@ -61,6 +61,12 @@
       "nodeId": "ee427a13-b79a-4e41-8651-87536c12afdd",
       "path": ".nodespec/tasks/api-service.task.md",
       "kind": "task"
+    },
+    {
+      "id": "cb178000-00c3-41a3-9287-254fab401225",
+      "nodeId": "ee427a13-b79a-4e41-8651-87536c12afdd",
+      "path": "src/features/rebase.ts",
+      "kind": "source"
     }
   ]
 }
