@@ -4,10 +4,10 @@
 ## REQ-001 — Store tasks <!-- r:REQ-001 -->
 status: in-progress · criteria 0/2 · tasks 0/2 · tests 0/0/0 of 0
 ### Criteria
-- [ ] tasks persist across restarts
+- [x] tasks persist across restarts
 - [ ] queries return within 200ms
 ### Tasks — API Service <!-- n:d6b61154-73f0-461d-add7-28e84ab08bfc -->
-- [ ] **T1 — Scaffold the API Service component.** <!-- t:25673db2 -->
+- [x] **T1 — Scaffold the API Service component.** <!-- t:25673db2 -->
 - [ ] **T2 — Wire the persistence layer.** <!-- t:c8144eb5 -->
 
 ## REQ-002 — Query tasks <!-- r:REQ-002 -->
