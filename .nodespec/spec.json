@@ -1,0 +1,43 @@
+{
+  "specVersion": 1,
+  "generatedBy": "nodespec",
+  "specHash": "9c9d8b825f4e1e7673b9016da8d05e29c3259996121ee74c71846df76d9ae7c5",
+  "vision": "Bench: a tiny task API",
+  "constraints": [],
+  "preferences": {},
+  "requirements": [
+    {
+      "requirementId": "REQ-001",
+      "name": "Store tasks",
+      "description": "Tasks persist",
+      "category": "functional",
+      "acceptanceCriteria": [
+        "tasks persist across restarts",
+        "queries return within 200ms"
+      ],
+      "contentHash": "ab0869d14a1242985959bb1cd8efadefa5608ebb150694042496b4058d792957"
+    },
+    {
+      "requirementId": "REQ-002",
+      "name": "Query tasks",
+      "description": "Tasks are queryable",
+      "category": "functional",
+      "acceptanceCriteria": [
+        "filter by status works"
+      ],
+      "contentHash": "4b5692e2a15ac851db886b55f497e85ab4d34b95e63ad152f0af26e64b1119c7"
+    }
+  ],
+  "mappings": [
+    {
+      "requirementId": "REQ-001",
+      "nodeId": "a40f7140-e6e0-44eb-b553-3f0e4671796c",
+      "mappingType": "implements"
+    },
+    {
+      "requirementId": "REQ-002",
+      "nodeId": "a40f7140-e6e0-44eb-b553-3f0e4671796c",
+      "mappingType": "implements"
+    }
+  ]
+}
