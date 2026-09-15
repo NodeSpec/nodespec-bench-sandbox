@@ -1,0 +1,66 @@
+{
+  "modelVersion": 1,
+  "generatedBy": "nodespec",
+  "modelHash": "dc02557d3d1e8f72a12b8b413c881c6e4d498e5b917fef515176ccca59f8faa4",
+  "nodes": [
+    {
+      "id": "136206ad-2158-4ee7-9c81-9975e61d27e2",
+      "type": "database",
+      "label": "Primary Database",
+      "ports": [
+        {
+          "id": "8a3819a6-f965-4c77-9703-669f4937ce8d",
+          "name": "SQL interface",
+          "direction": "in"
+        }
+      ],
+      "contentHash": "033bf89415ca4cf3e000909580dcc3316ec8598d818d353b507fa6a7a0bb6b74"
+    },
+    {
+      "id": "34143d44-06fb-4f7c-90f8-bf0280e753a4",
+      "type": "backend-service",
+      "label": "API Service",
+      "ports": [
+        {
+          "id": "1af866fb-1712-464a-8e8f-e89af2b5db11",
+          "name": "DB queries",
+          "direction": "out"
+        }
+      ],
+      "contentHash": "89c372769632fcca32c0197f05a7b4df361e69ef8ac0db81b65791669ecc4702"
+    }
+  ],
+  "edges": [
+    {
+      "id": "cd957ddc-87f8-40b3-ade4-41180824ca22",
+      "source": "34143d44-06fb-4f7c-90f8-bf0280e753a4",
+      "target": "136206ad-2158-4ee7-9c81-9975e61d27e2",
+      "contractId": "380adf1a-4e03-4741-bc04-40b0d570df2f",
+      "sourcePortId": "1af866fb-1712-464a-8e8f-e89af2b5db11",
+      "targetPortId": "8a3819a6-f965-4c77-9703-669f4937ce8d",
+      "contentHash": "948161ba08d475f453858c6e2367020df97049dcd51ee64898df557c5bfd8916"
+    }
+  ],
+  "contracts": [
+    {
+      "id": "380adf1a-4e03-4741-bc04-40b0d570df2f",
+      "kind": "sql",
+      "name": "Task storage queries",
+      "contentHash": "810a7cb5f7656d014ea4de7bb0e69db65e973a7c879770c8ddc3edb75fbd4cc8"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "18a35062-7070-474c-8a17-2b30c84bf425",
+      "nodeId": "34143d44-06fb-4f7c-90f8-bf0280e753a4",
+      "path": "src/api/index.ts",
+      "kind": "source"
+    },
+    {
+      "id": "c4845411-54a0-4fc8-bf49-6454c0f2476f",
+      "nodeId": "34143d44-06fb-4f7c-90f8-bf0280e753a4",
+      "path": ".nodespec/tasks/api-service.task.md",
+      "kind": "task"
+    }
+  ]
+}
