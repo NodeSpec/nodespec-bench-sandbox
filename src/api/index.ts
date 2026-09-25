@@ -1,1 +1,1 @@
-export const handler = () => "prmode-v2";
+export const handler = () => "prmode-v2b";
