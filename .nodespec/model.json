@@ -1,0 +1,66 @@
+{
+  "modelVersion": 2,
+  "generatedBy": "nodespec",
+  "modelHash": "2c6f5a200c9a6d79cc9f10301e82c54a4f11b465f3913c67154d8ced2a46a0aa",
+  "nodes": [
+    {
+      "id": "097fa889-e6ed-4c2b-9c02-8e85f7fab681",
+      "type": "backend-service",
+      "label": "API Service",
+      "ports": [
+        {
+          "id": "a707e0d0-0980-4973-9564-92c44434633c",
+          "name": "DB queries",
+          "direction": "out"
+        }
+      ],
+      "contentHash": "91b72042defbd407348d61acfa4a7ee43e2be125878e93122672fe96e901fe6d"
+    },
+    {
+      "id": "50acb461-8f4c-4304-a53c-e9306b475348",
+      "type": "database",
+      "label": "Primary Database",
+      "ports": [
+        {
+          "id": "808d061b-bf34-46b0-972c-81becb8b4252",
+          "name": "SQL interface",
+          "direction": "in"
+        }
+      ],
+      "contentHash": "4e4ba2feb063211d600074fc3ccca5aacdd675e2d2fe9fed9a5df042bb503ed1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e9c4e09e-ea4c-4d51-b5fc-701779609f45",
+      "source": "097fa889-e6ed-4c2b-9c02-8e85f7fab681",
+      "target": "50acb461-8f4c-4304-a53c-e9306b475348",
+      "contractId": "5d032405-b6cb-4ee1-8547-7b7d70917a66",
+      "sourcePortId": "a707e0d0-0980-4973-9564-92c44434633c",
+      "targetPortId": "808d061b-bf34-46b0-972c-81becb8b4252",
+      "contentHash": "3c32c08d7c1aad4e084b0bbb707fea7252e8f9ff56277b2c6648f8217c1fb65e"
+    }
+  ],
+  "contracts": [
+    {
+      "id": "5d032405-b6cb-4ee1-8547-7b7d70917a66",
+      "kind": "sql",
+      "name": "Task storage queries",
+      "contentHash": "2f1781a41535b28c19a031e4e0f46810c29cf633b12a204d49a3a473ad0a8a37"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "2717626d-d535-4653-a1a8-e937d84987bd",
+      "nodeId": "097fa889-e6ed-4c2b-9c02-8e85f7fab681",
+      "path": ".nodespec/tasks/api-service.task.md",
+      "kind": "task"
+    },
+    {
+      "id": "a7bdc286-08d8-41c9-85aa-683828292b6c",
+      "nodeId": "097fa889-e6ed-4c2b-9c02-8e85f7fab681",
+      "path": "src/api/index.ts",
+      "kind": "source"
+    }
+  ]
+}
