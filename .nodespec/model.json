@@ -1,7 +1,7 @@
 {
   "modelVersion": 2,
   "generatedBy": "nodespec",
-  "modelHash": "a295125b0784b410c752af7151778bc20faa35643c88a3087db59d6c38798cb7",
+  "modelHash": "400b5aa7432c71081d67192375a89497ffdc96026f0ad611e0054e0157f498be",
   "nodes": [
     {
       "id": "75f4ded3-6e84-42fc-9124-0fd6c9cdf08e",
@@ -50,6 +50,12 @@
     }
   ],
   "artifacts": [
+    {
+      "id": "46bbaac1-a4f0-4180-8feb-f4c0019bc1cd",
+      "nodeId": "75f4ded3-6e84-42fc-9124-0fd6c9cdf08e",
+      "path": "src/features/squash.ts",
+      "kind": "source"
+    },
     {
       "id": "5d4a70d5-36d6-46a6-af8d-dce8d517dc72",
       "nodeId": "75f4ded3-6e84-42fc-9124-0fd6c9cdf08e",
