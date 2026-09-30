@@ -1,7 +1,7 @@
 {
   "modelVersion": 3,
   "generatedBy": "nodespec",
-  "modelHash": "a36da3c6e08e01afbf218f60d6d18ab1b4570ec2c52d0d728e3360613a90db33",
+  "modelHash": "3d7afb0970cfe65f7a66e362a9e2c812d000f2af2180f70280605d2227e7a7eb",
   "nodes": [
     {
       "id": "687bb82c-f74e-4edb-8943-25d2bf89b324",
@@ -34,6 +34,12 @@
     }
   ],
   "artifacts": [
+    {
+      "id": "0e59a3a9-d248-4d63-92ce-b47460fc2ff8",
+      "nodeId": "687bb82c-f74e-4edb-8943-25d2bf89b324",
+      "path": "src/features/rebase.ts",
+      "kind": "source"
+    },
     {
       "id": "29f0c39b-c060-45bb-86c8-59b8e5a533cd",
       "nodeId": "687bb82c-f74e-4edb-8943-25d2bf89b324",
