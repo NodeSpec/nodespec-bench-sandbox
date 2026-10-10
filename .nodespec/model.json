@@ -1,7 +1,7 @@
 {
   "modelVersion": 3,
   "generatedBy": "nodespec",
-  "modelHash": "e920150bcf5a9a114e514295f0cf7e4fccbd223be54cc28ed37ebc37ee1f206b",
+  "modelHash": "b992b1258c62c11c1526fcc297e26ef3f72b1f7a439b102bb9fae98558ed6c00",
   "nodes": [
     {
       "id": "3e8fbf70-34fe-422f-905e-24e9aef62a3b",
@@ -45,6 +45,12 @@
       "nodeId": "40668421-e852-4fbf-9ac6-7710d6f44175",
       "path": ".nodespec/tasks/api-service.task.md",
       "kind": "task"
+    },
+    {
+      "id": "7f93bf6f-dc69-4d8a-b328-5ef5c42fc6ac",
+      "nodeId": "40668421-e852-4fbf-9ac6-7710d6f44175",
+      "path": "src/features/squash.ts",
+      "kind": "source"
     }
   ]
 }
