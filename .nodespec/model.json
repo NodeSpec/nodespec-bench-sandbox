@@ -1,0 +1,50 @@
+{
+  "modelVersion": 3,
+  "generatedBy": "nodespec",
+  "modelHash": "5e8daddd4f26d2b0d65ed90782025d538588964c68ff7254c3e59b7d5476a900",
+  "nodes": [
+    {
+      "id": "457e4fde-51cb-4299-ad42-b550b02a995a",
+      "type": "backend-service",
+      "label": "API Service",
+      "contentHash": "0a8d950762343eb774dbec5529544667723a2fab964960bd50def360d7634326"
+    },
+    {
+      "id": "5089ff85-0622-4306-a43d-4d53c18ae48d",
+      "type": "database",
+      "label": "Primary Database",
+      "contentHash": "f3306c248bed9d14a34a17c75b4c1d0d9e3c86d7a3491447ef00c7ed191f518a"
+    }
+  ],
+  "edges": [
+    {
+      "id": "4d6b683e-30fd-484c-89e7-8d1a90738d5a",
+      "source": "457e4fde-51cb-4299-ad42-b550b02a995a",
+      "target": "5089ff85-0622-4306-a43d-4d53c18ae48d",
+      "contractId": "8c3a177b-b9bd-481f-9b20-69563471c01a",
+      "contentHash": "03383769a3a4fadc52cf2d20b53311fecf457afba150ccd2f4366664b22fcf76"
+    }
+  ],
+  "contracts": [
+    {
+      "id": "8c3a177b-b9bd-481f-9b20-69563471c01a",
+      "kind": "sql",
+      "name": "Task storage queries",
+      "contentHash": "290d2b4ae3ee569584ab9b309df35c2ee507c1090cdff45cf1056525ab0d8db2"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "8e9b6947-9f66-4c16-a2d6-f85e40ec0b42",
+      "nodeId": "457e4fde-51cb-4299-ad42-b550b02a995a",
+      "path": "src/api/index.ts",
+      "kind": "source"
+    },
+    {
+      "id": "e81213dc-83fc-4301-bb05-0705cb54e0dc",
+      "nodeId": "457e4fde-51cb-4299-ad42-b550b02a995a",
+      "path": ".nodespec/tasks/api-service.task.md",
+      "kind": "task"
+    }
+  ]
+}
