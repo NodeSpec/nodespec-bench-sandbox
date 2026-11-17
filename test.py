@@ -1,2 +1,2 @@
-if test.py is tes1t.py 
+if test.py is tesr1t.py 
   then = "test.py"
